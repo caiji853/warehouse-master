@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="loginHtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>登录--仓库管理系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="/resources/favicon.ico">
+    <link rel="stylesheet" href="/resources/layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="/resources/css/public.css" media="all" />
+</head>
+<form action="" method="post" id="searchFrm" lay-filter="searchFrm" class="layui-form">
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">种群大小</label>
+            <div class="layui-input-inline">
+                <input type="text" name="customername" id="customername" class="layui-input input-radius"
+                       placeholder="请输入种群大小">
+            </div>
+        </div>
+        <div class="layui-inline">
+            <label class="layui-form-label">交叉因子</label>
+            <div class="layui-input-inline">
+                <input type="text" name="connectionpersion" id="connectionpersion" class="layui-input input-radius" placeholder="请输入交叉因子">
+            </div>
+        </div>
+        <div class="layui-inline">
+            <label class="layui-form-label">变异因子</label>
+            <div class="layui-input-inline">
+                <input type="text" name="phone" id="phone" class="layui-input input-radius" placeholder="请输入变异因子">
+            </div>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block" style="text-align: center;padding-right: 15%;">
+            <input type="button" class="layui-btn layui-btn-sm layui-btn-radius" value="显示"lay-submit="" lay-filter="doSearch"><i
+                    class="layui-icon layui-icon-search layui-icon-normal" id="btn"></i>
+            </input>
+            <img src="" alt="" width="1200" height="500" id="im" />
+        </div>
+    </div>
+</form>
+
+<!-- <a href="javascript:;" class="seraph icon-qq layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-lg4"></a>
+<a href="javascript:;" class="seraph icon-wechat layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-lg4"></a>
+<a href="javascript:;" class="seraph icon-sina layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-lg4"></a> -->
+
+<script type="text/javascript" src="/resources/layui/layui.js"></script>
+<script type="text/javascript" src="/resources/js/cache.js"></script>
+
+<script type="text/javascript">
+   var btnObj=document.getElementById("btn");
+   btnObj.onclick=function () {
+       var imObj=document.getElementById("im");
+       imObj.src="/resources/images/ProManager.png";
+
+   };
+</script>
+</body>
+</html>
